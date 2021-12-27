@@ -1,10 +1,10 @@
 provider "aws" {
-  
+
 }
 
 
 resource "aws_instance" "web" {
-  ami                    = "ami-02e136e904f3da870"
+  ami                    = "ami-0ed9277fb7eb570c9"
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.web-sg.id]
   user_data              = <<EOF
